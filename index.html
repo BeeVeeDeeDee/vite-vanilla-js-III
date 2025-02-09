@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite, Vitest, OO-Vanilla crashcourse</title>
+  </head>
+  <body>
+   
+    <header id="header" data-component="header">
+      <img src="/img/bee.png" alt="Bees pencil drawing">
+      <h1 class="header-title" data-select="header-title">@Bee</h1>
+    </header>
+    
+    <main>
+      <button
+        data-component="scrollButton"
+        data-target="gallery"
+        data-offset="82"
+        class="btn--light"
+      >Go to my artwork</button>
+    </main>
+
+    <section id="gallery">
+      <div class="gallery" data-component="gallery">
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/deconstructivism.png" alt="deconstructivism">
+          <div class="item-details">
+            <h3>Deconstructivism</h3>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+              <span class="likes">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/punkloader.png" alt="We're in this together!">
+          <div class="item-details">
+            <h3>We're in this together</h3>
+            <button class="like-btn">
+              <i class="fas fa-heart"></i>
+              <span class="likes">1</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/I-love-cat-not-with-prey.png" alt="Love Cat">
+          <div class="item-details">
+            <h3>Love cat, not with prey.</h3>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+              <span class="likes">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/Snine-screensaver.png" alt="Times Nine">
+          <div class="item-details">
+            <h3>Schnine</h3>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+              <span class="likes">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/poster.png" alt="Replaced By AI">
+          <div class="item-details">
+            <h3>replaced by AI</h3>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+              <span class="likes">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-item" data-select="gallery-item">
+          <img src="https://bees-resources.vercel.app/img/hoe-dan.jpg" alt="The walking Fred">
+          <div class="item-details">
+            <h3>Walking Fred</h3>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+              <span class="likes">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <div class="info-content" data-component="contact">
+        <h2>Bee@Bee.com</h2>
+        <button
+          data-component="scrollButton"
+          data-target="header"
+          class="btn--dark margin-top-0"
+        >back to top</button>  
+      </div>
+    </section>
+
+      
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

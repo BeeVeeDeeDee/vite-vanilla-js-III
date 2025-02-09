@@ -1,0 +1,25 @@
+/* fonts.css */
+
+@font-face {
+	font-family: 'Bardtmarkerraw';
+	src: local('Bardtmarkerraw'), url('/fonts/Bardtmarkerraw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'efnzepsm';
+	src: local('efnzepsm'), url('/fonts/efnzepsm.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: local('ProximaNova'), url('/fonts/ProximaNovaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

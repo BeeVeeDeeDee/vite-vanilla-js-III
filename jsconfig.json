@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@utils": ["src/util/index.js"],
+      "@core": ["src/core/index.js"],
+      "@components": ["src/components/index.js"]
+    },
+    "checkJs": false,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

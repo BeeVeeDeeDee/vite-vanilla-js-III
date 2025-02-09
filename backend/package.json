@@ -1,0 +1,17 @@
+{
+  "name": "mock-backend",
+  "version": "1.0.0",
+  "description": "json-server-backend",
+  "scripts": {
+    "mockend": "npx json-server db.json --port 3100"
+  },
+  "keywords": [
+    "json-server",
+    "node"
+  ],
+  "author": "B. van der Dennen",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
