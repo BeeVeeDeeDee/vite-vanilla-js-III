@@ -45,4 +45,4 @@ These practices are considered best practices because they lead to code that is 
 ```
 
 - add store to gallery item that keeps track of like-state [general-count+user-specific-(de)activation]
-
+- remove: store example @ScrollButton component.
