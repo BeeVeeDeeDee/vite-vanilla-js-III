@@ -1,4 +1,5 @@
 import { Component } from '@core';
+import { GalleryItem } from '@components';
 
 export class Gallery extends Component {
   constructor(attributes) {
@@ -13,11 +14,11 @@ export class Gallery extends Component {
   bindEvents() {
     
     // for now, just log the clicked item
-    this.$refs.galleryItem.forEach($item => {
-      $item.addEventListener('click', () => {
-        console.log($item);
-      });
-    });
+    // this.$refs.galleryItem.forEach($item => {
+    //   $item.addEventListener('click', () => {
+    //     console.log($item);
+    //   });
+    // });
     
   }
 
@@ -32,9 +33,9 @@ export class Gallery extends Component {
         throw new Error('Network response was not ok ' + response.statusText);
       }
       const data = await response.json();
-      console.log("from the gallery", data);
+      
       data.forEach(item => {
-        console.log(item);
+        new GalleryItem(this.$element, item);
       });
     } catch (error) {
       console.error('There has been a problem with your fetch operation:', error);

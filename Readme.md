@@ -44,5 +44,6 @@ These practices are considered best practices because they lead to code that is 
 </div>
 ```
 
-- add store to gallery item that keeps track of like-state [general-count+user-specific-(de)activation]
+- add `galleryItemStore` as a composable [composables/galleryItemStore] to globally keep track of like-state [general-count+user-specific-(de)activation] 
+- add persistence to the gallery item like state [discuss-when-to-store]
 - remove: store example @ScrollButton component.
