@@ -311,6 +311,7 @@ button.btn--dark {
   width: 80vw;
   height: 80vh;
   object-fit: contain;
+  cursor: pointer;
 }
 
 /* info content section  */
