@@ -6,6 +6,8 @@
  * @property {function} IMG - Creates an <img> element.
  * @property {function} Heading - Creates a heading element (h1, h2, etc.).
  * @property {function} Button - Creates a <button> element.
+ * @property {function} fontAwesomeI - Creates an <i> element styled with Font Awesome classes.
+ * @property {function} span - Creates a <span> element.
  * @property {function} createElement - General method for creating any HTML element with specified attributes.
  */
 export const Elements = {
@@ -34,7 +36,7 @@ export const Elements = {
   },
   
   Heading: (parent, Number, cssClass = null, cssText = null, innerHTML = null, onClick = null, id = null) => {
-    return Elements.createElement("h" + Number, parent, cssClass, cssText, innerHTML, onClick, null, id)
+    return Elements.createElement("h" + parseInt(Number), parent, cssClass, cssText, innerHTML, onClick, null, id)
   },
   
   Button: (parent, value = null, onClick = null, disabled = false, classNames = "", cssText = null, id = null,) => {
@@ -47,6 +49,15 @@ export const Elements = {
     let el = Elements.createElement("button", parent, cssClass.toString().replaceAll(","," "), cssText, value, onClick, id);
     
     return el;
+  },
+
+  fontAwesomeI: (parent, classNames = []) => {
+    let el = Elements.createElement("i", parent, classNames.toString().replaceAll(","," "));
+    return el;
+  },
+
+  span: (parent, cssClass = null, cssText = null, innerHTML = null, onClick = null, id = null) => {
+    return Elements.createElement("span", parent, cssClass, cssText, innerHTML, onClick, id);
   },
 
   createElement: (elementType, parent, cssClass = null, cssText = null, innerHTML = null, onClick = null, id = null, name = null) => {
