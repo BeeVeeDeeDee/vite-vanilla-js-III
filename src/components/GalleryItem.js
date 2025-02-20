@@ -28,12 +28,8 @@ export class GalleryItem {
   }
 
   showBlowUp = () => {
-    // console.log(`show blow up for ${this.itemData.title}`);
-
-    // SKIP FIRST: disable scrolling when the modal is open
     document.body.style.overflow = 'hidden';
 
-    // create a modal to display the image full size
     this.modal = Elements.DIV(document.body, 'gallery-modal');
     this.modal.addEventListener('click', this.hideBlowUp);
     this.modalImage = Elements.IMG(this.modal, this.itemData.img, 'modal-image');
