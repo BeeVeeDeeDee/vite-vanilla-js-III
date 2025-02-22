@@ -26,24 +26,9 @@ These practices are considered best practices because they lead to code that is 
 
 ## Next:
 
-- create Gallery item component.
-- use Elements to dynamically create and append dom elements.
-- use async await wrapped in try-catch blocks to fetch data & for each item in the collection create a gallery item.
-- gallery item: 
+round-up.
 
-```html
-<div class="gallery-item" data-select="gallery-item">
-  <img src="https://bees-resources.vercel.app/img/deconstructivism.png" alt="deconstructivism">
-  <div class="item-details">
-    <h3>Deconstructivism</h3>
-    <button class="like-btn">
-      <i class="far fa-heart"></i>
-      <span class="likes">0</span>
-    </button>
-  </div>
-</div>
-```
+- [ ] add gsap
+- [ ] add stagger effect.
+- [ ] using the build command & configuring the build options.
 
-- add `galleryItemStore` as a composable [composables/galleryItemStore] to globally keep track of like-state [general-count+user-specific-(de)activation] 
-- add persistence to the gallery item like state [discuss-when-to-store]
-- remove: store example @ScrollButton component.
