@@ -28,11 +28,14 @@ These practices are considered best practices because they lead to code that is 
 
 round-up.
 
-- [ ] create ImageModal component
-- [?] add gsap
-- [?] add stagger effect.
-- [?] add env variables for dev & prod environment. [api-prod:https://bees-resources.vercel.app/api/v1/github/bardts-art]
-- [?] refactor Component to check env. #11 this.devMode
+- [ ] recap: overview
 - [ ] using the build command
 - [ ] configuring the build options. [chunks]
+
+practice:
+
+- [ ] create ImageModal component [implement-@GalleryItem]
+- [?] add env variables for dev & prod environment. [api-prod:https://bees-resources.vercel.app/api/v1/github/bardts-art]
+- [?] refactor Component to check env. #11 this.devMode
+
 
