@@ -54,7 +54,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  background-image: url('../img/punk-2b.png');
+  background-image: url('/img/punk-2b.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/bg-dirt-texture.png');
+  background-image: url('/img/bg-dirt-texture.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -21,5 +21,17 @@ export default defineConfig ({
       '@components': path.resolve(__dirname, './src/components'),
       '@utils': path.resolve(__dirname, './src/util')
     }
+  },
+  build: {
+    outDir: 'production',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          component: ['src/core/Component.js'],
+          factory: ['src/core/Factory.js'],
+          app: ['src/main.js']
+        }
+      }
+    }    
   }
 })
