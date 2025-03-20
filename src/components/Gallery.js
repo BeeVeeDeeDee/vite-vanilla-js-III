@@ -28,7 +28,7 @@ export class Gallery extends Component {
     }
     // wrap the fetch in a try/catch block
     try {
-      const response = await fetch("http://localhost:3000/api/gallery-items");
+      const response = await fetch("http://localhost:3000/api/gallery-items"); // 👈🏼
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
       }

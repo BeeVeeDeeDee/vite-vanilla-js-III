@@ -23,6 +23,8 @@ export default defineConfig ({
     }
   },
   build: {
+    cssMinify: false,
+    minify: false,
     outDir: 'production',
     rollupOptions: {
       output: {
