@@ -28,14 +28,15 @@ These practices are considered best practices because they lead to code that is 
 
 round-up.
 
-- [ ] recap: overview
+- [ ] proxy the api
 - [ ] using the build command
 - [ ] configuring the build options. [chunks]
+- [ ] recap: overview
 
 practice:
 
 - [ ] create ImageModal component [implement-@GalleryItem]
-- [?] add env variables for dev & prod environment. [api-prod:https://bees-resources.vercel.app/api/v1/github/bardts-art]
+- [?] add env variables for dev & prod environment. [api-prod:https://bees-resources.vercel.app/api/v1/github/bardts-art] & show why [run-preview-no-dev]
 - [?] refactor Component to check env. #11 this.devMode
 
 
