@@ -36,7 +36,7 @@ round-up.
 practice:
 
 - [ ] create ImageModal component [implement-@GalleryItem]
-- [?] add env variables for dev & prod environment. [api-prod:https://bees-resources.vercel.app/api/v1/github/bardts-art] & show why [run-preview-no-dev]
+- [?] add env variables for dev & prod environment.
 - [?] refactor Component to check env. #11 this.devMode
 
 
